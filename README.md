@@ -1,0 +1,3 @@
+pnpm搭建monorepo项目，和使用workspace测试组件库
+组件支持typescript，可以被使用的项目识别
+组件支持整体导入、按需自动导入
