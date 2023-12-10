@@ -7,14 +7,11 @@ import 'element-plus/theme-chalk/dark/css-vars.css'
 // 引入 element-plus 插件和样式
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-// import router from './router'
-import pinia from './store'
+import router from './router'
 
 const app = createApp(App)
 
 // 安装 element-plus 插件
-app.use(ElementPlus)
-// app.use(router)
-app.use(pinia)
+app.use(ElementPlus).use(router)
 // 将应用挂载到挂载点上
 app.mount('#app')

@@ -1,16 +1,12 @@
 {
-  "name": "@ch-vele/components",
+  "name": "@ch-vele/hooks",
   "version": "0.0.0",
-  "description": "Vue3 + element-plus 组件库二次封装/components",
+  "description": "Vue3 + element-plus 组件库二次封装/hooks",
   "main": "index.ts",
   "module": "index.ts",
   "unpkg": "index.js",
   "jsdelivr": "index.js",
-  "peerDependencies": {
-    "vue": "^3.2.0"
-  },
   "types": "index.d.ts",
-  "sideEffects": false,
   "author": "Chen-zyi",
   "license": "ISC"
 }

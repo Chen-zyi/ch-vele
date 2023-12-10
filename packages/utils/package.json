@@ -1,0 +1,8 @@
+{
+  "name": "@ch-vele/utils",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Vue3 + element-plus 组件库二次封装/utils",
+  "main": "index.ts",
+  "license": "ISC"
+}
