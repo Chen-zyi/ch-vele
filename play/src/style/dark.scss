@@ -1,0 +1,8 @@
+@use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;
+
+/* 暗黑模式适配 */
+html.dark {
+  /* 自定义深色背景颜色 */
+  $border-style: #303030;
+  $color-white: #fff;
+}

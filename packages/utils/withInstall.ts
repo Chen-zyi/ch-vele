@@ -1,4 +1,5 @@
 import type { Plugin } from 'vue'
+
 export const withInstall = <T, E extends Record<string, any>>(
   main: T,
   extra?: E,

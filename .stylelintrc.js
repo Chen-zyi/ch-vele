@@ -38,7 +38,7 @@ module.exports = {
     'property-no-unknown': null, // 禁止未知的属性(true 为不允许)
     'value-no-vendor-prefix': null, // 关闭 属性值前缀 --webkit-box
     'property-no-vendor-prefix': null, // 关闭 属性前缀 -webkit-mask
-    // 允许 global 、export 、v-deep等伪类
+    // 允许 global 、export 、v-deep 等伪类
     'selector-pseudo-class-no-unknown': [
       true,
       {

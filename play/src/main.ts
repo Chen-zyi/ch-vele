@@ -1,12 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-// 重置样式
-import './style.scss'
-// 暗黑模式
-import 'element-plus/theme-chalk/dark/css-vars.css'
-// 引入 element-plus 插件和样式
-import ElementPlus from 'element-plus'
+// 引入重置样式
+import '@/style/reset.scss'
+// 导入公共样式
+import '@/style/index.scss'
+import 'uno.css'
 import 'element-plus/dist/index.css'
+import ElementPlus from 'element-plus'
 import router from './router'
 
 const app = createApp(App)

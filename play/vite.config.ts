@@ -5,6 +5,7 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
+import UnoCSS from 'unocss/vite'
 
 export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, process.cwd())
@@ -30,14 +31,12 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
         // 自动安装图标库
         autoInstall: true,
       }),
+      UnoCSS(),
     ],
     resolve: {
-      alias: [
-        {
-          find: /^@$/,
-          replacement: path.resolve(__dirname, 'src'),
-        },
-      ],
+      alias: {
+        '@': path.resolve(__dirname, 'src'),
+      },
     },
     server: {
       open: true,

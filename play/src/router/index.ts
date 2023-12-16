@@ -1,14 +1,11 @@
-import {
-  createRouter,
-  createWebHashHistory,
-  type RouteRecordRaw,
-} from 'vue-router'
+import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
+import { routes } from './routes'
 
 // 创建路由实例
 const router = createRouter({
   // 路由模式 hash
-  history: createWebHashHistory(),
-  routes: [] as RouteRecordRaw[],
+  history: createWebHistory(),
+  routes: routes as RouteRecordRaw[],
   // 刷新时，滚动条位置还原
   scrollBehavior: () => ({ left: 0, top: 0 }),
 })
